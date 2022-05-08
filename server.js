@@ -1,11 +1,11 @@
 const mysql = require("mysql");
 const inquirer = require("inquirer");
-const chalk = require("chalk");
+// const chalk = require("chalk");
 const cTable = require("console.table");
 const connection = require("./config/connection");
 const startScreen = [
   "View all Employees",
-  "View all Emplyees by Department",
+  "View all Employees by Department",
   "View all Employees by Manager",
   "Add Employee",
   "Remove Employee",
