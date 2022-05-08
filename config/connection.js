@@ -1,4 +1,4 @@
-const mysql = require("mysql");
+const mysql = require("mysql2");
 // const chalk = require("chalk");
 
 connection = mysql.createConnection({
@@ -10,13 +10,13 @@ connection = mysql.createConnection({
   multipleStatements: true,
 });
 
-// connection.connect((err) => {
-//   if (err) {
-//     console.log(chalk.white.bgRed(err));
-//     return;
-//   }
+connection.connect((err) => {
+  if (err) {
+    // console.log(chalk.white.bgRed(err));
+    return;
+  }
 
-//   console.log(chalk.green(`Connected to db. ThreadID: ${connection.threadId}`));
-// });
+  console.log(chalk.green(`Connected to db. ThreadID: ${connection.threadId}`));
+});
 
 module.exports = connection;
