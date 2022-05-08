@@ -25,7 +25,7 @@ VALUES
 	('Michael', 'Scott', 1),
 	('Pam', 'Beesly', 5),
 	('Jim', 'Halpert', 2),
-	('Toby', 'Flenderson', 3),
+	('Dwight', 'Schrute', 3),
 	('Stanley', 'Hudson', 6),
 	('Darryl', 'Philbin', 3);
 
